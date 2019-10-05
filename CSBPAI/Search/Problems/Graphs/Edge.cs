@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Search.Graphs {
+namespace Search.Problems.Graphs {
     public class Edge : IEquatable<Edge>, IComparable<Edge> {
         public double Weight {
             get; private set;

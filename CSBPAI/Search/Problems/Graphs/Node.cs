@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Search.Graphs {
+namespace Search.Problems.Graphs {
     public class Node : IComparable<Node>, IEquatable<Node> {
         public string Label {
             get; private set;

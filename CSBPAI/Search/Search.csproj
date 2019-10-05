@@ -43,10 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graphs\Edge.cs" />
-    <Compile Include="Graphs\Node.cs" />
+    <Compile Include="Algorithms\AStarSearch.cs" />
+    <Compile Include="Algorithms\Interfaces\ISearchAlgorithm.cs" />
+    <Compile Include="Algorithms\SearchAlgorithm.cs" />
+    <Compile Include="Heuristics\Interfaces\IHeuristic.cs" />
+    <Compile Include="Heuristics\NullHeuristic.cs" />
+    <Compile Include="Heuristics\PiecewiseHeuristic.cs" />
+    <Compile Include="Problems\Graphs\Edge.cs" />
+    <Compile Include="Problems\Graphs\GraphProblem.cs" />
+    <Compile Include="Problems\Graphs\GraphState.cs" />
+    <Compile Include="Problems\Graphs\Node.cs" />
+    <Compile Include="Problems\Interfaces\ISearchProblem.cs" />
+    <Compile Include="Problems\SearchProblem.cs" />
+    <Compile Include="Problems\State.cs" />
+    <Compile Include="Problems\StateComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Classes\PriorityQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
