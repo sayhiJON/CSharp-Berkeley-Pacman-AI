@@ -9,7 +9,7 @@ using Search.Problems;
 using Search.Utility.Classes;
 
 namespace Search.Algorithms {
-    public class AStarSearch : SearchAlgorithm {
+    public class DepthFirstSearch : SearchAlgorithm {
         /// <summary>
         /// Algorithm specific implementation for searching.
         /// </summary>
@@ -18,7 +18,7 @@ namespace Search.Algorithms {
         /// <returns>An <see cref="Array"/> of <see cref="State"/>s that will lead to the solution or null if no solution is possible.</returns>
         protected override State[] RunSearch(SearchProblem problem, IHeuristic heuristic) {
             /*
-                Implement the A* Search algorithm here.
+                Implement the Breadth First Search algorithm here.
 
                 The SearchProblem class contains useful methods for implementing the algorithm:
                     SearchProblem.GetStartingState()

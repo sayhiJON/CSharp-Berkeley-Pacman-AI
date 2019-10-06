@@ -9,6 +9,5 @@ namespace Search.Problems.Interfaces {
         State GetStartingState();
         bool IsGoalState(State state);
         State[] GetSuccessors(State state);
-        double EvaluateState(State state);
     }
 }

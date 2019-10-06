@@ -109,9 +109,9 @@ namespace Search {
                 { g.GetHashCode(), 0d }
             };
 
-            GraphProblem problem = new GraphProblem(s, new Node[] { g }, new PiecewiseHeuristic<Node>(piecewise));
+            GraphProblem problem = new GraphProblem(s, new Node[] { g });
             AStarSearch search = new AStarSearch();
-            State[] results = search.Search(problem);
+            State[] results = search.Search(problem, new PiecewiseHeuristic<Node>(piecewise));
 
             Console.WriteLine("Expanded States:");
 

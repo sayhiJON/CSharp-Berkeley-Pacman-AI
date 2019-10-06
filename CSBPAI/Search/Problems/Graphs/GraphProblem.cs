@@ -12,19 +12,11 @@ namespace Search.Problems.Graphs {
         private Node    p_Start = null;
         private Node[]  p_Goals = null;
 
-        public GraphProblem(Node start, Node[] goals, IHeuristic heuristic = null) {
+        public GraphProblem(Node start, Node[] goals) {
             this.p_Start = start;
             this.p_Goals = goals;
-            this.p_Heuristic = heuristic;
-
-            if (heuristic == null)
-                this.p_Heuristic = new NullHeuristic();
 
             this.ExpandedStates = new List<State>();
-        }
-
-        public override double EvaluateState(State state) {
-            return this.p_Heuristic.EvaluateState(this, state);
         }
 
         public override State GetStartingState() {
